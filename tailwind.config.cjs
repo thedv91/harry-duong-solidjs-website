@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['sans-serif', ...defaultTheme.fontFamily.sans],
+        sans: ['Poppins', 'sans-serif', ...defaultTheme.fontFamily.sans],
       },
       gridTemplateColumns: {
         '96px': 'repeat(auto-fill, minmax(100px, auto))',
