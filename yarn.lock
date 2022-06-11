@@ -2252,6 +2252,17 @@ solid-start-node@next:
     rollup "^2.53.3"
     sirv "^1.0.12"
 
+solid-start-vercel@next:
+  version "0.1.0-alpha.88"
+  resolved "https://registry.yarnpkg.com/solid-start-vercel/-/solid-start-vercel-0.1.0-alpha.88.tgz#d060680dff92c4d6807575bc82e7eb27786883d2"
+  integrity sha512-8d4rTWLkk0NDX4Qy4DucFQFUJ6iYJF3I3Ea3zB4ueJqWPVpFjomO1PU4iQNnFRs8PEo4cKSmtwRVtDFXA8JVNg==
+  dependencies:
+    "@rollup/plugin-commonjs" "^21.0.1"
+    "@rollup/plugin-json" "^4.1.0"
+    "@rollup/plugin-node-resolve" "^13.0.2"
+    rollup "^2.53.3"
+    vite "^2.9.8"
+
 solid-start@next:
   version "0.1.0-alpha.88"
   resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.1.0-alpha.88.tgz#9382ba97ed734a2d9fdaa52e1f6de25c3d1c8b75"
@@ -2454,7 +2465,7 @@ vite-plugin-solid@^2.2.6:
     solid-refresh "^0.4.0"
     vite "^2.8.0"
 
-vite@^2.8.0, vite@^2.9.9:
+vite@^2.8.0, vite@^2.9.8, vite@^2.9.9:
   version "2.9.12"
   resolved "https://registry.yarnpkg.com/vite/-/vite-2.9.12.tgz#b1d636b0a8ac636afe9d83e3792d4895509a941b"
   integrity sha512-suxC36dQo9Rq1qMB2qiRorNJtJAdxguu5TMvBHOc/F370KvqAe9t48vYp+/TbPKRNrMh/J55tOUmkuIqstZaew==
