@@ -175,4 +175,5 @@ dist
 .svelte-kit
 
 .solid
+.vercel
 # End of https://www.toptal.com/developers/gitignore/api/node,macos

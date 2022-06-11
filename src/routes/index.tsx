@@ -17,9 +17,19 @@ export default function Home() {
       <Meta name="twitter:card" content="summary"></Meta>
       <Meta name="twitter:site" content="@nopbongdem" />
       <Meta name="twitter:creator" content="@nopbongdem" />
-      <Link rel="preload" as="image" href="/images/avatar.jpeg" />
-      <Link rel="preload" as="image" href="/images/avatar@1.5x.jpeg" />
-      <Link rel="preload" as="image" href="/images/avatar@2x.jpeg" />
+      <Link
+        rel="preload"
+        as="image"
+        href="/images/avatar.jpeg"
+        type="image/jpeg"
+      />
+      <Link
+        rel="preload"
+        as="image"
+        href="/images/avatar.webp"
+        type="image/webp"
+      />
+
       <div class="container mx-auto md:px-10">
         <Info />
         <About />
