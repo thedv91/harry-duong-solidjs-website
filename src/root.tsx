@@ -1,31 +1,15 @@
 // @refresh reload
+import './index.css';
 import lazySizes from 'lazysizes';
 import { Links, Meta, Routes, Scripts } from 'solid-start/root';
 import { ErrorBoundary } from 'solid-start/error-boundary';
-import { onMount, Suspense } from 'solid-js';
-import './index.css';
+import { Suspense } from 'solid-js';
 import Font from './components/Font';
+import { isServer } from 'solid-js/web';
 
 lazySizes.cfg.lazyClass = 'lazyload';
 
 export default function Root() {
-  onMount(async () => {
-    if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/sw.js').then(
-          function (registration) {
-            console.log(
-              'Service Worker registration successful with scope: ',
-              registration.scope,
-            );
-          },
-          function (err) {
-            console.log('Service Worker registration failed: ', err);
-          },
-        );
-      });
-    }
-  });
   return (
     <html lang="en">
       <head>
@@ -119,7 +103,13 @@ export default function Root() {
       </head>
       <body class="bg-white transition-all dark:bg-slate-900 antialiased">
         <ErrorBoundary>
-          <Suspense>
+          <Suspense
+            fallback={
+              <div class="min-h-screen w-full flex items-center justify-center">
+                <span>Loading...</span>
+              </div>
+            }
+          >
             <Routes />
           </Suspense>
         </ErrorBoundary>
@@ -127,4 +117,21 @@ export default function Root() {
       </body>
     </html>
   );
+}
+
+if (import.meta.env.PROD && !isServer && 'serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').then(
+      function (registration) {
+        console.log(
+          'Service Worker registration successful with scope: ',
+          registration.scope,
+        );
+      },
+      function (err) {
+        console.log('Service Worker registration failed: ', err);
+      },
+    );
+  });
 }
