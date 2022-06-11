@@ -12,7 +12,10 @@ export default function Home() {
       <Title>Harry Duong</Title>
       <Meta name="description" content="Harry Duong's personal website" />
       <Meta name="og:title" content="Harry Duong" />
-      <Meta property="og:url" content="https://harry-duong.vercel.app/" />
+      <Meta
+        property="og:url"
+        content="https://harry-duong-solidjs-website.vercel.app/"
+      />
       <Meta name="og:description" content="Harry Duong's personal website" />
       <Meta name="twitter:card" content="summary"></Meta>
       <Meta name="twitter:site" content="@nopbongdem" />
@@ -20,14 +23,14 @@ export default function Home() {
       <Link
         rel="preload"
         as="image"
-        href="/images/avatar.jpeg"
-        type="image/jpeg"
+        href="/images/avatar.webp"
+        type="image/webp"
       />
       <Link
         rel="preload"
         as="image"
-        href="/images/avatar.webp"
-        type="image/webp"
+        href="/images/avatar.jpeg"
+        type="image/jpeg"
       />
 
       <div class="container mx-auto md:px-10">

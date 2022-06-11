@@ -21,10 +21,6 @@ export default function NotFound() {
         <Link href="/" class="text-sky-600 hover:underline">
           Home
         </Link>
-        {' - '}
-        <Link href="/about" class="text-sky-600 hover:underline">
-          About Page
-        </Link>
       </p>
     </main>
   );
