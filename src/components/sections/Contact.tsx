@@ -25,22 +25,22 @@ const Contact: Component = () => {
       [e.currentTarget.name]: e.currentTarget.value,
     }));
   };
-  const sendMail = async () => {
-    if (loading()) return;
-    setLoading(true);
-    try {
-      await fetch('/api/send-mail', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-      setData({});
-    } catch (err) {
-      //
-    } finally {
-      setLoading(false);
-    }
-  };
+  // const sendMail = async () => {
+  //   if (loading()) return;
+  //   setLoading(true);
+  //   try {
+  //     await fetch('/api/send-mail', {
+  //       method: 'POST',
+  //       headers: { 'content-type': 'application/json' },
+  //       body: JSON.stringify(data),
+  //     });
+  //     setData({});
+  //   } catch (err) {
+  //     //
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
   const value = data();
   return (
     <Section id="contact" intro="Say hello" title="Contact">
@@ -74,7 +74,6 @@ const Contact: Component = () => {
             onSubmit={(e) => {
               e.preventDefault();
               e.stopPropagation();
-              sendMail();
             }}
           >
             <div class="grid gap-8">

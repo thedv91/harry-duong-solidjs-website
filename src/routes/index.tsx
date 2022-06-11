@@ -17,7 +17,7 @@ export default function Home() {
         content="https://harry-duong-solidjs-website.vercel.app/"
       />
       <Meta name="og:description" content="Harry Duong's personal website" />
-      <Meta name="twitter:card" content="summary"></Meta>
+      <Meta name="twitter:card" content="summary" />
       <Meta name="twitter:site" content="@nopbongdem" />
       <Meta name="twitter:creator" content="@nopbongdem" />
       <Link
