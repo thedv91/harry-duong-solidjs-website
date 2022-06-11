@@ -1,4 +1,5 @@
-import { Component, createSignal, JSX } from 'solid-js';
+import type { Component, JSX } from 'solid-js';
+import { createSignal } from 'solid-js';
 import { CalendarIcon } from '../icons/calendar';
 import { MailIcon } from '../icons/mail';
 import Section from '../Section';
@@ -16,7 +17,7 @@ const Contact: Component = () => {
     subject?: string;
     message?: string;
   }>({});
-  const [loading, setLoading] = createSignal(false);
+  const [loading] = createSignal(false);
   const onChange: JSX.DOMAttributes<
     HTMLInputElement | HTMLTextAreaElement
   >['onChange'] = (e) => {
@@ -41,7 +42,6 @@ const Contact: Component = () => {
   //     setLoading(false);
   //   }
   // };
-  const value = data();
   return (
     <Section id="contact" intro="Say hello" title="Contact">
       <article class="rounded-3xl md:bg-white md:p-12 dark:md:bg-slate-800">
@@ -80,14 +80,14 @@ const Contact: Component = () => {
               <div class="grid gap-8 lg:grid-cols-2">
                 <Input
                   onChange={onChange}
-                  value={value.name ?? ''}
+                  value={data().name ?? ''}
                   name="name"
                   required
                   placeholder="Your Name*"
                 />
                 <Input
                   onChange={onChange}
-                  value={value.email ?? ''}
+                  value={data().email ?? ''}
                   name="email"
                   type="email"
                   required
@@ -96,14 +96,14 @@ const Contact: Component = () => {
               </div>
               <Input
                 onChange={onChange}
-                value={value.subject ?? ''}
+                value={data().subject ?? ''}
                 name="subject"
                 required
                 placeholder="Subject*"
               />
               <textarea
                 onChange={onChange}
-                value={value.message ?? ''}
+                value={data().message ?? ''}
                 name="message"
                 required
                 placeholder="Your Message*"

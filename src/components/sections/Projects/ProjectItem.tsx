@@ -1,4 +1,5 @@
-import { Component, For } from 'solid-js';
+import type { Component} from 'solid-js';
+import { For } from 'solid-js';
 
 type Props = {
   image?: string;
@@ -6,13 +7,13 @@ type Props = {
   technologies?: string[];
   features?: string[];
 };
-const ProjectItem: Component<Props> = ({ name, technologies, features }) => {
+const ProjectItem: Component<Props> = (props) => {
   return (
     <div class="overflow-hidden rounded-lg border p-8 shadow-2xl">
-      <h3 class="text-xl font-semibold">{name}</h3>
+      <h3 class="text-xl font-semibold">{props.name}</h3>
       <h4 class="text-ellipsis break-words font-semibold">
         Technologies Used:{' '}
-        <For each={technologies}>
+        <For each={props.technologies}>
           {(value, index) => (
             <>
               {index() !== 0 && <span>,</span>}
@@ -22,7 +23,7 @@ const ProjectItem: Component<Props> = ({ name, technologies, features }) => {
         </For>
       </h4>
       <ul class="ml-5 mt-2 list-disc">
-        <For each={features}>{(value) => <li>{value}</li>}</For>
+        <For each={props.features}>{(value) => <li>{value}</li>}</For>
       </ul>
     </div>
   );

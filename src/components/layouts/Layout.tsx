@@ -2,7 +2,7 @@ import { type Component, type JSX } from 'solid-js';
 import Footer from './Footer';
 import Sidebar from './Sidebar';
 
-const Layout: Component<{ children: JSX.Element }> = ({ children }) => {
+const Layout: Component<{ children: JSX.Element }> = (props) => {
   return (
     <>
       <Sidebar />
@@ -11,7 +11,7 @@ const Layout: Component<{ children: JSX.Element }> = ({ children }) => {
       </a>
       <main id="main" class="md:ml-28">
         <div class="flex flex-1 flex-col bg-slate-50 px-8 dark:bg-transparent">
-          {children}
+          {props.children}
         </div>
         <Footer />
       </main>
