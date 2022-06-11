@@ -9,8 +9,8 @@ const Info = () => {
         <div class="flex h-full flex-col items-center justify-center">
           <div class="mt-16 h-250 w-250 cursor-pointer overflow-hidden rounded-full shadow-xl ring-primary ring-offset-4 ring-offset-purple-400 transition-all hover:shadow-2xl hover:ring-4 focus:ring-4 dark:ring-blue-700 dark:ring-offset-blue-400 md:h-350 md:w-350 lg:mt-0">
             <img
-              class="img-fluid"
-              src="/images/avatar.webp"
+              class="img-fluid lazyload"
+              data-src="/images/avatar.webp"
               alt="Harry Duong"
               width={400}
               height={400}

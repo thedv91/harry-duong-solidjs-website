@@ -1,9 +1,12 @@
 // @refresh reload
+import lazySizes from 'lazysizes';
 import { Links, Meta, Routes, Scripts } from 'solid-start/root';
 import { ErrorBoundary } from 'solid-start/error-boundary';
 import { onMount, Suspense } from 'solid-js';
 import './index.css';
 import Font from './components/Font';
+
+lazySizes.cfg.lazyClass = 'lazyload';
 
 export default function Root() {
   onMount(async () => {
