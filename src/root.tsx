@@ -98,6 +98,11 @@ export default function Root() {
         />
         <meta name="theme-color" content="#131019" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <meta
+          httpEquiv="Accept-CH"
+          content="DPR, Width, Viewport-Width, ECT, Device-Memory"
+        />
+        <meta httpEquiv="Accept-CH-Lifetime" content="86400" />
         <Meta />
         <Links />
       </head>
