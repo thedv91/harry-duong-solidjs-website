@@ -12,10 +12,7 @@ export default function Home() {
       <Title>Harry Duong</Title>
       <Meta name="description" content="Harry Duong's personal website" />
       <Meta name="og:title" content="Harry Duong" />
-      <Meta
-        property="og:url"
-        content="https://harry-duong-solidjs-website.vercel.app/"
-      />
+      <Meta property="og:url" content="https://harry-duong-solid.vercel.app/" />
       <Meta name="og:description" content="Harry Duong's personal website" />
       <Meta name="twitter:card" content="summary" />
       <Meta name="twitter:site" content="@nopbongdem" />
