@@ -12,6 +12,8 @@ const Info = () => {
               class="img-fluid"
               src="/images/avatar.webp"
               alt="Harry Duong"
+              width={400}
+              height={400}
             />
           </div>
         </div>
