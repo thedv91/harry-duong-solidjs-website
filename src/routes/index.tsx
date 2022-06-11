@@ -26,12 +26,6 @@ export default function Home() {
         href="/images/avatar.webp"
         type="image/webp"
       />
-      <Link
-        rel="preload"
-        as="image"
-        href="/images/avatar.jpeg"
-        type="image/jpeg"
-      />
 
       <div class="container mx-auto md:px-10">
         <Info />

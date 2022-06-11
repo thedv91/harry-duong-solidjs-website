@@ -109,7 +109,7 @@ export default function Root() {
           name="msapplication-TileImage"
           content="/favicon/ms-icon-144x144.png"
         />
-        <meta name="theme-color" content="#6d28d9"></meta>
+        <meta name="theme-color" content="#131019" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <Meta />
         <Links />

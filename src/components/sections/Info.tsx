@@ -8,15 +8,11 @@ const Info = () => {
       <div class="grid h-full grid-cols-1 gap-10 transition-all lg:grid-cols-2 lg:gap-4">
         <div class="flex h-full flex-col items-center justify-center">
           <div class="mt-16 h-250 w-250 cursor-pointer overflow-hidden rounded-full shadow-xl ring-primary ring-offset-4 ring-offset-purple-400 transition-all hover:shadow-2xl hover:ring-4 focus:ring-4 dark:ring-blue-700 dark:ring-offset-blue-400 md:h-350 md:w-350 lg:mt-0">
-            <picture>
-              <source srcset="/images/avatar.webp" type="image/webp" />
-              <source srcset="/images/avatar.jpeg" type="image/jpeg" />
-              <img
-                class="img-fluid"
-                src="/images/avatar.jpeg"
-                alt="Harry Duong"
-              />
-            </picture>
+            <img
+              class="img-fluid"
+              src="/images/avatar.webp"
+              alt="Harry Duong"
+            />
           </div>
         </div>
         <div class="flex h-full flex-col items-center justify-center lg:items-start">
