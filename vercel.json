@@ -1,8 +1,4 @@
 {
-  "github": {
-    "silent": true,
-    "enabled": true
-  },
   "build": {
     "env": {
       "ENABLE_VC_BUILD": "1"
