@@ -1,7 +1,12 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 3,
   "github": {
     "silent": true,
     "enabled": true
+  },
+  "build": {
+    "env": {
+      "ENABLE_VC_BUILD": "1"
+    }
   }
 }
