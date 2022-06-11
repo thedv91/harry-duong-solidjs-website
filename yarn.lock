@@ -3030,7 +3030,7 @@ solid-start-node@next:
     rollup "^2.53.3"
     sirv "^1.0.12"
 
-solid-start-vercel@next:
+solid-start-vercel@^0.1.0-alpha.88:
   version "0.1.0-alpha.88"
   resolved "https://registry.yarnpkg.com/solid-start-vercel/-/solid-start-vercel-0.1.0-alpha.88.tgz#d060680dff92c4d6807575bc82e7eb27786883d2"
   integrity sha512-8d4rTWLkk0NDX4Qy4DucFQFUJ6iYJF3I3Ea3zB4ueJqWPVpFjomO1PU4iQNnFRs8PEo4cKSmtwRVtDFXA8JVNg==
@@ -3041,7 +3041,7 @@ solid-start-vercel@next:
     rollup "^2.53.3"
     vite "^2.9.8"
 
-solid-start@next:
+solid-start@^0.1.0-alpha.88:
   version "0.1.0-alpha.88"
   resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.1.0-alpha.88.tgz#9382ba97ed734a2d9fdaa52e1f6de25c3d1c8b75"
   integrity sha512-sML6krhbYg0oW+UVnVA0XIJjiXifP7GWKMwAKMyx9Ut9mYPiLhGTq61NEzSMr34F2z3SUq2PK9XmvvSCqMt+AA==
